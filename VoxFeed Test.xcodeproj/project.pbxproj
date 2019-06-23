@@ -32,6 +32,9 @@
 		0B13736B22BBF17F00DA9994 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13736922BBF17F00DA9994 /* ControllerView.swift */; };
 		0B13736E22BBF1B100DA9994 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13736D22BBF1B100DA9994 /* HomeViewController.swift */; };
 		0B13737022BBF1C500DA9994 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13736F22BBF1C500DA9994 /* HomeView.swift */; };
+		0B13737322BC22EC00DA9994 /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737222BC22EC00DA9994 /* HomeTopBar.swift */; };
+		0B13737622BC266D00DA9994 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737522BC266D00DA9994 /* LandingViewController.swift */; };
+		0B13737822BC267500DA9994 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737722BC267500DA9994 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		0B13736922BBF17F00DA9994 /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 		0B13736D22BBF1B100DA9994 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0B13736F22BBF1C500DA9994 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0B13737222BC22EC00DA9994 /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
+		0B13737522BC266D00DA9994 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		0B13737722BC267500DA9994 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		408EB9B876868454B72A48A3 /* Pods-VoxFeed Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.debug.xcconfig"; path = "Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.debug.xcconfig"; sourceTree = "<group>"; };
 		85BEE5109D4E2310AC8E4381 /* Pods_VoxFeed_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoxFeed_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEB958A2D37A6FFD8FB3C84 /* Pods-VoxFeed Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.release.xcconfig"; path = "Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		0B13734522BBEDC900DA9994 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B13737122BC22D800DA9994 /* Home */,
 				0B13734D22BBEDE000DA9994 /* Overrided views */,
 				0B13735022BBEDE000DA9994 /* Utils - Misc */,
 				0B13734622BBEDE000DA9994 /* Utils - Views */,
@@ -180,6 +187,7 @@
 				0B13736922BBF17F00DA9994 /* ControllerView.swift */,
 				0B13736822BBF17E00DA9994 /* ViewController.swift */,
 				0B13736C22BBF18A00DA9994 /* Home */,
+				0B13737422BC264800DA9994 /* Landing */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -191,6 +199,23 @@
 				0B13736D22BBF1B100DA9994 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0B13737122BC22D800DA9994 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0B13737222BC22EC00DA9994 /* HomeTopBar.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0B13737422BC264800DA9994 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				0B13737722BC267500DA9994 /* LandingView.swift */,
+				0B13737522BC266D00DA9994 /* LandingViewController.swift */,
+			);
+			path = Landing;
 			sourceTree = "<group>";
 		};
 		3BE5EA5288CF8BFCA67943C9 /* Frameworks */ = {
@@ -320,10 +345,13 @@
 				0B13734422BBECDB00DA9994 /* DefaultComponentProvider.swift in Sources */,
 				0B13736622BBEFE500DA9994 /* UIColor+additions.swift in Sources */,
 				0B13735F22BBEDE100DA9994 /* UIView+standardShadow.swift in Sources */,
+				0B13737322BC22EC00DA9994 /* HomeTopBar.swift in Sources */,
+				0B13737822BC267500DA9994 /* LandingView.swift in Sources */,
 				0B13735922BBEDE100DA9994 /* UILabel+font.swift in Sources */,
 				0B13736E22BBF1B100DA9994 /* HomeViewController.swift in Sources */,
 				0B13735722BBEDE100DA9994 /* UIImageView+rounded.swift in Sources */,
 				0B13736022BBEDE100DA9994 /* UIView+debugBorders.swift in Sources */,
+				0B13737622BC266D00DA9994 /* LandingViewController.swift in Sources */,
 				0B13735B22BBEDE100DA9994 /* UIButton+floatingAdd.swift in Sources */,
 				0B13736A22BBF17F00DA9994 /* ViewController.swift in Sources */,
 				0B13735822BBEDE100DA9994 /* UIScrollview+vertical.swift in Sources */,

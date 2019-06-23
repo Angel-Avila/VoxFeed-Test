@@ -20,12 +20,14 @@ class ViewController<V: View>: UIViewController {
     private var showsNavBar: Bool!
     private var didAddView = false
     private var savedTitle = ""
+    private var belowStatusBar: Bool!
     
-    init(showsNavBar: Bool = false, title: String = "") {
+    init(showsNavBar: Bool = false, title: String = "", belowStatusBar: Bool = false) {
         super.init(nibName: nil, bundle: nil)
         self.showsNavBar = showsNavBar
         savedTitle = title
         self.title = title
+        self.belowStatusBar = belowStatusBar
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,7 +41,11 @@ class ViewController<V: View>: UIViewController {
         if !showsNavBar {
             self.navigationController?.setNavigationBarHidden(true, animated: true)
             view.addSubview(controllerView)
+            
+            let statusBarHeight = belowStatusBar ?  UIApplication.shared.statusBarFrame.size.height : 0
+            
             controllerView.pin.all()
+            controllerView.pin.top(statusBarHeight)
             controllerView.setupUI()
         }
         

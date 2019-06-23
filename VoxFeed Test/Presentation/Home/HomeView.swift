@@ -10,8 +10,41 @@ import UIKit
 
 class HomeView: ControllerView {
     
+    lazy var topBar = HomeTopBar()
+    
+    private var vcViews = [UIView]()
+    
+    private var lastShown = 0
+    
     override func setupUI() {
+        addSubview(topBar)
         
+        topBar.pin.top()
+            .horizontally()
     }
     
+    func setupViews(views: [UIView]) {
+        vcViews = views
+        
+        let offset = topBar.height
+        
+        views.forEach { view in
+            
+            addSubview(view)
+            view.pin.top(offset)
+                .horizontally()
+                .bottom()
+            
+            view.isHidden = true
+        }
+        
+        views.first?.isHidden = false
+    }
+    
+    func indexSelected(_ index: Int) {
+        vcViews[lastShown].isHidden = true
+        vcViews[index].isHidden = false
+        
+        lastShown = index
+    }
 }
