@@ -21,9 +21,8 @@ class HomeViewController: ViewController<HomeView> {
     }
     
     private func setupUI() {
-        let vc = UIViewController(nibName: nil, bundle: nil)
-        vc.view.backgroundColor = .red
-        let views = [LandingViewController(), vc].map { $0.view! }
+        let feedPresenter = FeedPresenterImpl(withProvider: PostServices())
+        let views = [LandingViewController(), FeedViewController(withPresenter: feedPresenter)].map { $0.view! }
         
         controllerView.setupViews(views: views)
         

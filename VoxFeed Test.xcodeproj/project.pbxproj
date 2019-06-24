@@ -35,6 +35,14 @@
 		0B13737322BC22EC00DA9994 /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737222BC22EC00DA9994 /* HomeTopBar.swift */; };
 		0B13737622BC266D00DA9994 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737522BC266D00DA9994 /* LandingViewController.swift */; };
 		0B13737822BC267500DA9994 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737722BC267500DA9994 /* LandingView.swift */; };
+		0B13737B22BF015100DA9994 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737A22BF015100DA9994 /* FeedView.swift */; };
+		0B13737D22BF016B00DA9994 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737C22BF016B00DA9994 /* FeedViewController.swift */; };
+		0B13737F22BF02D600DA9994 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13737E22BF02D600DA9994 /* FeedPresenter.swift */; };
+		0B13738222BF033400DA9994 /* PostProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13738122BF033400DA9994 /* PostProvider.swift */; };
+		0B13738422BF044E00DA9994 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13738322BF044E00DA9994 /* Post.swift */; };
+		0B13738622BF06A200DA9994 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B13738522BF06A200DA9994 /* PostViewModel.swift */; };
+		0B9CD39222C0457900129664 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39122C0457900129664 /* Router.swift */; };
+		0B9CD39422C04D3E00129664 /* String+dayString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39322C04D3E00129664 /* String+dayString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +75,14 @@
 		0B13737222BC22EC00DA9994 /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
 		0B13737522BC266D00DA9994 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		0B13737722BC267500DA9994 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		0B13737A22BF015100DA9994 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		0B13737C22BF016B00DA9994 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0B13737E22BF02D600DA9994 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		0B13738122BF033400DA9994 /* PostProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProvider.swift; sourceTree = "<group>"; };
+		0B13738322BF044E00DA9994 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0B13738522BF06A200DA9994 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		0B9CD39122C0457900129664 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0B9CD39322C04D3E00129664 /* String+dayString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+dayString.swift"; sourceTree = "<group>"; };
 		408EB9B876868454B72A48A3 /* Pods-VoxFeed Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.debug.xcconfig"; path = "Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.debug.xcconfig"; sourceTree = "<group>"; };
 		85BEE5109D4E2310AC8E4381 /* Pods_VoxFeed_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoxFeed_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEB958A2D37A6FFD8FB3C84 /* Pods-VoxFeed Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.release.xcconfig"; path = "Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +132,7 @@
 			children = (
 				0B13732E22BBE88100DA9994 /* AppDelegate.swift */,
 				0B13734022BBEC7E00DA9994 /* Navigation */,
+				0B13738022BF030600DA9994 /* Data */,
 				0B13736722BBF14900DA9994 /* Presentation */,
 				0B13734522BBEDC900DA9994 /* View */,
 				0B13733522BBE88300DA9994 /* Assets.xcassets */,
@@ -177,6 +194,7 @@
 				0B13735522BBEDE000DA9994 /* UIScrollView+contentSize.swift */,
 				0B13735622BBEDE000DA9994 /* Utils.swift */,
 				0B13736522BBEFE500DA9994 /* UIColor+additions.swift */,
+				0B9CD39322C04D3E00129664 /* String+dayString.swift */,
 			);
 			path = "Utils - Misc";
 			sourceTree = "<group>";
@@ -188,6 +206,7 @@
 				0B13736822BBF17E00DA9994 /* ViewController.swift */,
 				0B13736C22BBF18A00DA9994 /* Home */,
 				0B13737422BC264800DA9994 /* Landing */,
+				0B13737922BF010400DA9994 /* Feed */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -216,6 +235,27 @@
 				0B13737522BC266D00DA9994 /* LandingViewController.swift */,
 			);
 			path = Landing;
+			sourceTree = "<group>";
+		};
+		0B13737922BF010400DA9994 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0B13737A22BF015100DA9994 /* FeedView.swift */,
+				0B13737E22BF02D600DA9994 /* FeedPresenter.swift */,
+				0B13737C22BF016B00DA9994 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		0B13738022BF030600DA9994 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B9CD39122C0457900129664 /* Router.swift */,
+				0B13738122BF033400DA9994 /* PostProvider.swift */,
+				0B13738322BF044E00DA9994 /* Post.swift */,
+				0B13738522BF06A200DA9994 /* PostViewModel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		3BE5EA5288CF8BFCA67943C9 /* Frameworks */ = {
@@ -340,19 +380,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B13738622BF06A200DA9994 /* PostViewModel.swift in Sources */,
 				0B13736222BBEDE100DA9994 /* UIViewController+setupNavBar.swift in Sources */,
+				0B13737D22BF016B00DA9994 /* FeedViewController.swift in Sources */,
 				0B13735E22BBEDE100DA9994 /* ImageView.swift in Sources */,
 				0B13734422BBECDB00DA9994 /* DefaultComponentProvider.swift in Sources */,
 				0B13736622BBEFE500DA9994 /* UIColor+additions.swift in Sources */,
 				0B13735F22BBEDE100DA9994 /* UIView+standardShadow.swift in Sources */,
 				0B13737322BC22EC00DA9994 /* HomeTopBar.swift in Sources */,
+				0B9CD39222C0457900129664 /* Router.swift in Sources */,
 				0B13737822BC267500DA9994 /* LandingView.swift in Sources */,
 				0B13735922BBEDE100DA9994 /* UILabel+font.swift in Sources */,
+				0B13738422BF044E00DA9994 /* Post.swift in Sources */,
 				0B13736E22BBF1B100DA9994 /* HomeViewController.swift in Sources */,
 				0B13735722BBEDE100DA9994 /* UIImageView+rounded.swift in Sources */,
+				0B13737B22BF015100DA9994 /* FeedView.swift in Sources */,
+				0B9CD39422C04D3E00129664 /* String+dayString.swift in Sources */,
 				0B13736022BBEDE100DA9994 /* UIView+debugBorders.swift in Sources */,
 				0B13737622BC266D00DA9994 /* LandingViewController.swift in Sources */,
 				0B13735B22BBEDE100DA9994 /* UIButton+floatingAdd.swift in Sources */,
+				0B13738222BF033400DA9994 /* PostProvider.swift in Sources */,
 				0B13736A22BBF17F00DA9994 /* ViewController.swift in Sources */,
 				0B13735822BBEDE100DA9994 /* UIScrollview+vertical.swift in Sources */,
 				0B13732F22BBE88100DA9994 /* AppDelegate.swift in Sources */,
@@ -364,6 +411,7 @@
 				0B13736122BBEDE100DA9994 /* UIFont+additions.swift in Sources */,
 				0B13736322BBEDE100DA9994 /* UIScrollView+contentSize.swift in Sources */,
 				0B13737022BBF1C500DA9994 /* HomeView.swift in Sources */,
+				0B13737F22BF02D600DA9994 /* FeedPresenter.swift in Sources */,
 				0B13735A22BBEDE100DA9994 /* UIButton+large.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +551,7 @@
 			baseConfigurationReference = 408EB9B876868454B72A48A3 /* Pods-VoxFeed Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "https://api.voxfeed.com/public";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PX5B7972N5;
 				INFOPLIST_FILE = "VoxFeed Test/Info.plist";
@@ -523,6 +572,7 @@
 			baseConfigurationReference = BFEB958A2D37A6FFD8FB3C84 /* Pods-VoxFeed Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "https://api.voxfeed.com/public";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PX5B7972N5;
 				INFOPLIST_FILE = "VoxFeed Test/Info.plist";
