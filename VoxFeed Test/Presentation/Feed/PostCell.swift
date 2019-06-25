@@ -31,7 +31,7 @@ class PostCell: GenericCollectionViewCell<PostViewModel> {
     
     lazy var divider: UIView! = {
         let view = UIView()
-        view.backgroundColor = .valueTextColor
+        view.backgroundColor = UIColor(white: 0.65, alpha: 1)
         return view
     }()
     
@@ -43,6 +43,7 @@ class PostCell: GenericCollectionViewCell<PostViewModel> {
             userPhoto.af_setImage(withURL: post.profileImageURL)
             usernameLabel.text = post.username
             socialNetworkLabel.text = post.socialNetwork
+            socialNetworkLabel.textColor = post.socialNetworkColor
             dateLabel.text = post.date
             detailLabel.text = post.postText
 //            downloadPostImage(post, completion: nil)
@@ -127,8 +128,7 @@ class PostCell: GenericCollectionViewCell<PostViewModel> {
                 .aspectRatio()
                 .marginTop(12)
         }
-        
-        
+
         divider.pin.below(of: postImage)
             .left(hMargin)
             .right()

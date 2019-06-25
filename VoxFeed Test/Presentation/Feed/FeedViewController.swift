@@ -86,8 +86,11 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         let topInset: CGFloat = 20
+        // VC's view has a Y relative to its super viewcontroller
         let topBarOffset = self.view.frame.minY
-        let botInset = topBarOffset + topInset + (Utils.phoneHasNotch() ? 24 : 0)
+        let notchInset: CGFloat = (Utils.phoneHasNotch() ? 24 : 0)
+        let botFreeSpace: CGFloat = 50
+        let botInset = topBarOffset + topInset + notchInset + botFreeSpace
         
         return UIEdgeInsets(top: topInset, left: 0, bottom: botInset, right: 0)
     }

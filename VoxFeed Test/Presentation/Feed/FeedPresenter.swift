@@ -65,7 +65,7 @@ class FeedPresenterImpl: FeedPresenter {
             
             let id = post.id
             let date = post.date.dayString()
-            let socialNetwork = post.socialNetwork
+            let socialNetwork = post.socialNetwork.capitalized
             let username = post.user.username
             let profileImageURL = URL(string: post.user.profileImage)!
             let campaignName = post.campaign.name
@@ -82,7 +82,20 @@ class FeedPresenterImpl: FeedPresenter {
             let audience = post.stats.audience
             let earnings = post.earnings
             
-            return PostViewModel(id: id, date: date, socialNetwork: socialNetwork, username: username, profileImageURL: profileImageURL, campaignName: campaignName, campaignImageURL: campaignImageURL, brandName: brandName, brandImageURL: brandImageURL, postText: postText, postImageURL: postImageURL, postLink: postLink, clicks: clicks, shares: shares, likes: likes, comments: comments, audience: audience, earnings: earnings)
+            let socialNetworkColor: UIColor!
+            
+            switch socialNetwork {
+            case "Facebook":
+                socialNetworkColor = .facebookColor
+            case "Instagram":
+                socialNetworkColor = .instagramColor
+            case "Twitter":
+                socialNetworkColor = .twitterColor
+            default:
+                socialNetworkColor = .clear
+            }
+            
+            return PostViewModel(id: id, date: date, socialNetwork: socialNetwork, socialNetworkColor: socialNetworkColor, username: username, profileImageURL: profileImageURL, campaignName: campaignName, campaignImageURL: campaignImageURL, brandName: brandName, brandImageURL: brandImageURL, postText: postText, postImageURL: postImageURL, postLink: postLink, clicks: clicks, shares: shares, likes: likes, comments: comments, audience: audience, earnings: earnings)
             
         }
     }

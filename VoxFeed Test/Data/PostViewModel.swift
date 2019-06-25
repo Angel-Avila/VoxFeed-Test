@@ -6,12 +6,13 @@
 //  Copyright © 2019 Angel Avila. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct PostViewModel {
     let id: String
     let date: String
     let socialNetwork: String
+    let socialNetworkColor: UIColor
     let username: String
     let profileImageURL: URL
     let campaignName: String
