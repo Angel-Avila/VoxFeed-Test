@@ -17,11 +17,13 @@ class LandingView: ControllerView {
     
     lazy var audienceImageView = ImageView(image: #imageLiteral(resourceName: "icon-awesome-faces"))
     
-    override func setupUI() {
+    override func addSubviews() {
         addSubview(welcomeLabel)
         addSubview(groundImageView)
         addSubview(audienceImageView)
-        
+    }
+    
+    override func setupUI() {
         welcomeLabel.pin.top(10%)
             .horizontally()
             .height(100)

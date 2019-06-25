@@ -16,9 +16,11 @@ class HomeView: ControllerView {
     
     private var lastShown = 0
     
-    override func setupUI() {
+    override func addSubviews() {
         addSubview(topBar)
-        
+    }
+    
+    override func setupUI() {
         topBar.pin.top()
             .horizontally()
     }

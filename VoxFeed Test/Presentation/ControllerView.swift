@@ -9,6 +9,7 @@
 import UIKit
 
 protocol View: UIView {
+    func addSubviews()
     func setupUI()
 }
 
@@ -17,10 +18,20 @@ class ControllerView: UIView, View {
     init() {
         super.init(frame: .zero)
         backgroundColor = .white
+        addSubviews()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupUI()
+    }
+    
+    func addSubviews() {
+        
     }
     
     func setupUI() {

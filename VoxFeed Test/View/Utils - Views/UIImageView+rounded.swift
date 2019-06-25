@@ -11,9 +11,9 @@ import PinLayout
 
 extension UIImageView {
     
-    static func rounded(height: CGFloat, image: UIImage?) -> UIImageView {
+    static func rounded(height: CGFloat, image: UIImage? = nil, contentMode: ContentMode = .scaleAspectFill) -> UIImageView {
         let iv = UIImageView(image: image)
-        iv.contentMode = .scaleAspectFill
+        iv.contentMode = contentMode
         iv.pin.height(height).width(height)
         iv.layer.cornerRadius = height/2
         iv.clipsToBounds = true

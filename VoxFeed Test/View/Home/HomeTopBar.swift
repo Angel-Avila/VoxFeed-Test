@@ -24,6 +24,8 @@ class HomeTopBar: UIView {
         setupViews()
         addViews()
         setupFrames()
+        
+        backgroundColor = UIColor(white: 0.99, alpha: 1)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class HomeTopBar: UIView {
     private func setupViews() {
         segmentedControl.tintColor = .voxFeedBlue
         segmentedControl.selectedSegmentIndex = 0
-        divider.backgroundColor = .lightGray
+        divider.backgroundColor = .clear
     }
     
     private func addViews() {

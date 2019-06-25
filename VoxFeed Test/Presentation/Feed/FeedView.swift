@@ -12,10 +12,12 @@ class FeedView: ControllerView {
     
     lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
-    override func setupUI() {
+    override func addSubviews() {
         collectionView.backgroundColor = .white
         addSubview(collectionView)
-        collectionView.pin.all()
     }
     
+    override func setupUI() {
+        collectionView.pin.all()
+    }
 }
