@@ -12,6 +12,7 @@ import AlamofireImage
 class FeedViewController: ViewController<FeedView> {
     
     let presenter: FeedPresenter!
+    let superViewController: UIViewController!
     
     let cellId = "PostCell"
     
@@ -21,8 +22,9 @@ class FeedViewController: ViewController<FeedView> {
     
     let downloader = ImageDownloader()
     
-    init(withPresenter presenter: FeedPresenter) {
+    init(withPresenter presenter: FeedPresenter, presentingViewController: UIViewController) {
         self.presenter = presenter
+        self.superViewController = presentingViewController
         
         super.init()
         controllerView = FeedView()
@@ -131,6 +133,6 @@ extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        getNavigator()?.navigate(.push(view: .detail(post: posts[indexPath.row])), superViewController)
     }
 }
