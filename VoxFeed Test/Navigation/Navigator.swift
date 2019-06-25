@@ -23,6 +23,7 @@ enum NavigationTarget {
 
 protocol ComponentProvider {
     func resolve(_ view: NavigationView) -> UIViewController
+    func segmentedControlViewControllers() -> [UIViewController]
 }
 
 class Navigator {
@@ -73,6 +74,10 @@ class Navigator {
     
     func setNavigationControllerRoot(_ view: NavigationView, animated: Bool = true) {
         navigationController.setViewControllers([provider.resolve(view)], animated: animated)
+    }
+    
+    func segmentedControlViewControllers() -> [UIViewController] {
+        return provider.segmentedControlViewControllers()
     }
     
     private func setupNavigationController() {

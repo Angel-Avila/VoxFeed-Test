@@ -10,10 +10,14 @@ import UIKit
 
 enum NavigationView {
     case home
+    case landing
+    case feed
     case none
 }
 
 class DefaultComponentProvider: ComponentProvider {
+    
+    private let postProvider = PostServices()
     
     func resolve(_ view: NavigationView) -> UIViewController {
         switch view {
@@ -21,9 +25,20 @@ class DefaultComponentProvider: ComponentProvider {
         case .home:
             return HomeViewController()
             
+        case .landing:
+            return LandingViewController()
+            
+        case .feed:
+            let feedPresenter = FeedPresenterImpl(withProvider: postProvider)
+            return FeedViewController(withPresenter: feedPresenter)
+            
         default:
             return UIViewController(nibName: nil, bundle: nil)
         }
+    }
+    
+    func segmentedControlViewControllers() -> [UIViewController] {
+        return [resolve(.landing), resolve(.feed)]
     }
 }
 
