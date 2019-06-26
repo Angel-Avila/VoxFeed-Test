@@ -38,6 +38,10 @@ class PostDetailViewController: ViewController<PostDetailView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        
+        _ = controllerView.socialNetworkButton.rx.tap.bind {
+            UIApplication.shared.open(self.post.postLink)
+        }
     }
 
     override func viewWillLayoutSubviews() {

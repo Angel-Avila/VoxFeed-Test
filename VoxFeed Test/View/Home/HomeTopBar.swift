@@ -38,7 +38,7 @@ class HomeTopBar: UIView {
     private func setupViews() {
         segmentedControl.tintColor = .voxFeedBlue
         segmentedControl.selectedSegmentIndex = 0
-        divider.backgroundColor = .clear
+        divider.backgroundColor = .lightGray
     }
     
     private func addViews() {
@@ -61,7 +61,7 @@ class HomeTopBar: UIView {
         
         divider.pin.bottom()
             .horizontally()
-            .height(1)
+            .height(0.5)
     }
     
 }

@@ -17,6 +17,16 @@ class LandingView: ControllerView {
     
     lazy var audienceImageView = ImageView(image: #imageLiteral(resourceName: "icon-awesome-faces"))
     
+    override init() {
+        super.init()
+        welcomeLabel.alpha = 0
+        audienceImageView.alpha = 0
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func addSubviews() {
         addSubview(welcomeLabel)
         addSubview(groundImageView)
