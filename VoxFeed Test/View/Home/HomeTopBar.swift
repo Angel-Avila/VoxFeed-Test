@@ -23,13 +23,16 @@ class HomeTopBar: UIView {
         
         setupViews()
         addViews()
-        setupFrames()
-        
         backgroundColor = UIColor(white: 0.99, alpha: 1)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupFrames()
     }
     
     private func setupViews() {

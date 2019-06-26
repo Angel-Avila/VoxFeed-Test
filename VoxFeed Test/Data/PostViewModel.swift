@@ -22,10 +22,10 @@ struct PostViewModel {
     let postText: String
     let postImageURL: URL
     let postLink: URL
-    let clicks: Int
-    let shares: Int
-    let likes: Int
-    let comments: Int
-    let audience: Int
-    let earnings: Double
+    let clicks: String
+    let shares: String
+    let likes: String
+    let comments: String
+    let audience: String
+    let earnings: String
 }

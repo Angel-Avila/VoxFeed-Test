@@ -18,14 +18,14 @@ extension UIViewController {
     func topBarHeight() -> CGFloat {
         let navBarHeight = self.navigationController?.navigationBar.frame.height ?? 0.0
         let topBarHeight = UIApplication.shared.statusBarFrame.size.height + navBarHeight
-        
         return topBarHeight
     }
     
     func pinControllerViewToTopBar(_ controllerView: UIView) {
+        let topBarHeight = self.topBarHeight()
         
         view.addSubview(controllerView)
-        controllerView.pin.top(view.pin.safeArea)
+        controllerView.pin.top(view.pin.safeArea + topBarHeight)
             .bottom()
             .horizontally()
     }

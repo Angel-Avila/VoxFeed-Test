@@ -75,12 +75,17 @@ class FeedPresenterImpl: FeedPresenter {
             let postText = post.post.text
             let postImageURL = URL(string: post.post.image)!
             let postLink = URL(string: post.post.link)!
-            let clicks = post.stats.clicks ?? 0
-            let shares = post.stats.shares
-            let likes = post.stats.likes
-            let comments = post.stats.comments
-            let audience = post.stats.audience
-            let earnings = post.earnings
+            
+            let doubleFormat = "%.2f"
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+
+            let clicks = numberFormatter.string(from: NSNumber(value: post.stats.clicks ?? 0)) ?? "0"
+            let shares = numberFormatter.string(from: NSNumber(value: post.stats.shares)) ?? "0"
+            let likes = numberFormatter.string(from: NSNumber(value: post.stats.likes)) ?? "0"
+            let comments = numberFormatter.string(from: NSNumber(value: post.stats.comments)) ?? "0"
+            let audience = numberFormatter.string(from: NSNumber(value: post.stats.audience)) ?? "0"
+            let earnings = "$\(String(format: doubleFormat, post.earnings)) USD"
             
             let socialNetworkColor: UIColor!
             

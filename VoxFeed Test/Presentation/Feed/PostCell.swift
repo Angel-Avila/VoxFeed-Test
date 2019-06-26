@@ -132,7 +132,7 @@ class PostCell: GenericCollectionViewCell<PostViewModel> {
         divider.pin.below(of: postImage)
             .left(hMargin)
             .right()
-            .height(1)
+            .height(0.5)
             .marginTop(20)
         
         contentView.pin.height(divider.frame.maxY)

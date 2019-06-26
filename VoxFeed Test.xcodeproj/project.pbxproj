@@ -46,6 +46,8 @@
 		0B9CD39622C1C29F00129664 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39522C1C29F00129664 /* PostCell.swift */; };
 		0B9CD39922C2AD1C00129664 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39822C2AD1C00129664 /* PostDetailView.swift */; };
 		0B9CD39B22C2AD4800129664 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39A22C2AD4800129664 /* PostDetailViewController.swift */; };
+		0B9CD39D22C3C45500129664 /* UIView+backgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39C22C3C45500129664 /* UIView+backgroundColor.swift */; };
+		0B9CD3A022C3C5D000129664 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CD39F22C3C5D000129664 /* StatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		0B9CD39522C1C29F00129664 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		0B9CD39822C2AD1C00129664 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		0B9CD39A22C2AD4800129664 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		0B9CD39C22C3C45500129664 /* UIView+backgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+backgroundColor.swift"; sourceTree = "<group>"; };
+		0B9CD39F22C3C5D000129664 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		408EB9B876868454B72A48A3 /* Pods-VoxFeed Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.debug.xcconfig"; path = "Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.debug.xcconfig"; sourceTree = "<group>"; };
 		85BEE5109D4E2310AC8E4381 /* Pods_VoxFeed_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoxFeed_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEB958A2D37A6FFD8FB3C84 /* Pods-VoxFeed Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.release.xcconfig"; path = "Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0B13737122BC22D800DA9994 /* Home */,
+				0B9CD39E22C3C5A500129664 /* PostDetail */,
 				0B13734D22BBEDE000DA9994 /* Overrided views */,
 				0B13735022BBEDE000DA9994 /* Utils - Misc */,
 				0B13734622BBEDE000DA9994 /* Utils - Views */,
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				0B13735122BBEDE000DA9994 /* UIView+standardShadow.swift */,
+				0B9CD39C22C3C45500129664 /* UIView+backgroundColor.swift */,
 				0B13735222BBEDE000DA9994 /* UIView+debugBorders.swift */,
 				0B13735322BBEDE000DA9994 /* UIFont+additions.swift */,
 				0B13735422BBEDE000DA9994 /* UIViewController+setupNavBar.swift */,
@@ -271,6 +277,14 @@
 			children = (
 				0B9CD39822C2AD1C00129664 /* PostDetailView.swift */,
 				0B9CD39A22C2AD4800129664 /* PostDetailViewController.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		0B9CD39E22C3C5A500129664 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0B9CD39F22C3C5D000129664 /* StatsView.swift */,
 			);
 			path = PostDetail;
 			sourceTree = "<group>";
@@ -411,6 +425,8 @@
 				0B9CD39922C2AD1C00129664 /* PostDetailView.swift in Sources */,
 				0B13738422BF044E00DA9994 /* Post.swift in Sources */,
 				0B9CD39B22C2AD4800129664 /* PostDetailViewController.swift in Sources */,
+				0B9CD3A022C3C5D000129664 /* StatsView.swift in Sources */,
+				0B9CD39D22C3C45500129664 /* UIView+backgroundColor.swift in Sources */,
 				0B13736E22BBF1B100DA9994 /* HomeViewController.swift in Sources */,
 				0B13735722BBEDE100DA9994 /* UIImageView+rounded.swift in Sources */,
 				0B13737B22BF015100DA9994 /* FeedView.swift in Sources */,
